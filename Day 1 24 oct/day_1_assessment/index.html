@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring Flowers School</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f5f9ff;
+    }
+
+    header {
+      flex-wrap: wrap;
+    }
+
+    .logo h2 {
+      margin: 0;
+    }
+
+    .page {
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .menu button {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+      }
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header d-flex align-items-center justify-content-between p-3 bg-primary text-white">
+    <div class="logo d-flex align-items-center">
+      <h2>Spring Flowers School</h2>
+    </div>
+    <nav class="menu">
+      <button class="btn btn-light me-2" onclick="showPage('home')">Home</button>
+      <button class="btn btn-light me-2" onclick="showPage('profile')">Student Profile</button>
+      <button class="btn btn-light" onclick="showPage('timetable')">Time Table</button>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <!-- Welcome Page -->
+    <section id="home" class="page">
+      <h1>Welcome to Spring Flowers School 🌸</h1>
+      <p>We are happy to have you here!</p>
+    </section>
+
+    <!-- Student Profile Page -->
+    <section id="profile" class="page d-none">
+      <h2>Student Profile</h2>
+      <div class="card p-3 shadow-sm">
+        <p><strong>Name:</strong> Khushi Kala</p>
+        <p><strong>Age:</strong> 23</p>
+        <p><strong>Roll No:</strong> 25</p>
+        <p><strong>Email:</strong> khushi.kala@gmail.com</p>
+      </div>
+    </section>
+
+    <!-- Time Table Page -->
+<section id="timetable" class="page d-none">
+  <h2>My Time Table</h2>
+  <table class="table table-bordered table-striped mt-3">
+    <thead class="table-primary text-center">
+      <tr>
+        <th>Day</th>
+        <th>9:00 - 10:00</th>
+        <th>10:00 - 11:00</th>
+        <th>11:00 - 12:00</th>
+        <th>12:00 - 1:00</th>
+        <th>1:00 - 2:00</th>
+        <th>2:00 - 3:00</th>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+      <tr>
+        <td><strong>Monday</strong></td>
+        <td>Maths</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Games</td>
+        <td>Lunch Break</td>
+        <td>Computer</td>
+      </tr>
+      <tr>
+        <td><strong>Tuesday</strong></td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Social Studies</td>
+        <td>Art</td>
+        <td>Lunch Break</td>
+        <td>Hindi</td>
+      </tr>
+      <tr>
+        <td><strong>Wednesday</strong></td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Computer</td>
+        <td>Music</td>
+        <td>Lunch Break</td>
+        <td>Maths</td>
+      </tr>
+      <tr>
+        <td><strong>Thursday</strong></td>
+        <td>Social Studies</td>
+        <td>English</td>
+        <td>Maths</td>
+        <td>Art</td>
+        <td>Lunch Break</td>
+        <td>Science Lab</td>
+      </tr>
+      <tr>
+        <td><strong>Friday</strong></td>
+        <td>Computer</td>
+        <td>Hindi</td>
+        <td>Science</td>
+        <td>Sports</td>
+        <td>Lunch Break</td>
+        <td>Library</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+</main>
+
+  <footer class="text-center bg-light py-3 mt-4">
+    <p>&copy; 2025 Spring Flowers School</p>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(page => page.classList.add('d-none'));
+      document.getElementById(pageId).classList.remove('d-none');
+    }
+  </script>
+</body>
+</html>
