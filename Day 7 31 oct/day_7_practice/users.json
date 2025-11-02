@@ -1,0 +1,20 @@
+[
+  {
+    "_id": { "$oid": "6724ab12d7e03a01ab98e76c" },
+    "username": "khushi_kala",
+    "email": "khushi.kala@example.com",
+    "passwordHash": "$2a$10$QsZ5qXlYz...",
+    "role": "CUSTOMER",
+    "createdAt": { "$date": "2025-10-28T10:00:00Z" },
+    "lastLogin": { "$date": "2025-10-31T08:45:00Z" }
+  },
+  {
+    "_id": { "$oid": "6724ab12d7e03a01ab98e77a" },
+    "username": "abhi_kala",
+    "email": "abhi.kala@example.com",
+    "passwordHash": "$2a$10$AHqdlp9Yz...",
+    "role": "CUSTOMER",
+    "createdAt": { "$date": "2025-10-27T11:30:00Z" },
+    "lastLogin": { "$date": "2025-10-30T09:15:00Z" }
+  }
+]

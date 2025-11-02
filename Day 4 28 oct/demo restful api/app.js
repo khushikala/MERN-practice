@@ -42,7 +42,7 @@ function displayUsers(users){
  async function addUser(){
     const userData={
         name: 'New User',
-        email:'vishu@gmail.com'
+        email:'khushi@gmail.com'
     };
     try{
         const response =await fetch(apiurl,{

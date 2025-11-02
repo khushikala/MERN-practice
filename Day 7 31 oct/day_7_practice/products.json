@@ -1,0 +1,36 @@
+[
+  {
+    "_id": { "$oid": "6724ac77d7e03a01ab98e771" },
+    "name": "Apple iPhone 16 Pro",
+    "category": "Electronics",
+    "brand": "Apple",
+    "description": "Latest iPhone with A18 chip and titanium body",
+    "price": 1299.99,
+    "currency": "USD",
+    "stock": { "quantity": 150, "inStock": true },
+    "attributes": {
+      "color": "Natural Titanium",
+      "storage": "256GB",
+      "warranty": "1 Year"
+    },
+    "createdAt": { "$date": "2025-10-30T09:00:00Z" },
+    "updatedAt": { "$date": "2025-10-30T09:00:00Z" }
+  },
+  {
+    "_id": { "$oid": "6724ac88d7e03a01ab98e772" },
+    "name": "Nike Air Zoom Pegasus 40",
+    "category": "Footwear",
+    "brand": "Nike",
+    "description": "Running shoes for daily training",
+    "price": 120.0,
+    "currency": "USD",
+    "stock": { "quantity": 300, "inStock": true },
+    "attributes": {
+      "color": "Black/White",
+      "size": [7, 8, 9, 10, 11],
+      "material": "Mesh"
+    },
+    "createdAt": { "$date": "2025-10-30T09:10:00Z" },
+    "updatedAt": { "$date": "2025-10-30T09:10:00Z" }
+  }
+]

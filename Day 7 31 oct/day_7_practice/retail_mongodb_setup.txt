@@ -1,0 +1,62 @@
+// Database: retailDB
+use retailDB;
+
+// 1. Product Catalog
+db.products.insertMany([
+  {
+    name: "iPhone 15",
+    category: "Electronics",
+    brand: "Apple",
+    price: 79999,
+    stock: 150,
+    specifications: { color: "Black", storage: "128GB", camera: "48MP" }
+  },
+  {
+    name: "T-shirt",
+    category: "Fashion",
+    brand: "Levi's",
+    price: 1499,
+    stock: 300,
+    size: ["S", "M", "L", "XL"],
+    color: ["Red", "Blue"]
+  }
+]);
+
+// 2. Customer Orders
+db.orders.insertMany([
+  {
+    orderDate: ISODate("2025-10-25T10:00:00Z"),
+    userId: ObjectId("66d5a4fa2f52b59ac1a7d322"),
+    products: [
+      { productId: ObjectId("66d5a4fa2f52b59ac1a7d101"), quantity: 1, price: 79999 }
+    ],
+    totalAmount: 79999,
+    paymentMethod: "Credit Card"
+  }
+]);
+
+// 3. User Authentication
+db.users.insertMany([
+  {
+    username: "khushi_kala",
+    email: "khushi@example.com",
+    password: "$2a$10$abcdeHashedPassword123",
+    role: "customer"
+  },
+  {
+    username: "admin",
+    email: "admin@store.com",
+    password: "$2a$10$xyzHashedPassword456",
+    role: "admin"
+  }
+]);
+
+// 4. Indexes
+db.products.createIndex({ category: 1 });
+db.orders.createIndex({ userId: 1 });
+db.products.createIndex({ name: "text", brand: "text" });
+
+// 5. Sample Queries
+db.products.find({ category: "Electronics" });
+db.orders.find({ userId: ObjectId("66d5a4fa2f52b59ac1a7d322") });
+db.products.find({ $text: { $search: "apple" } });

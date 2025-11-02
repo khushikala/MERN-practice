@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Weather App Using Module Pattern</title>
+<style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #00b4db, #0083b0);
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .weather-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            padding: 10px;
+            width: 60%;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #34495e;
+        }
+
+        #result {
+            display: none; /* Hide by default */
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        #result.has-content {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+
+<h2>Weather App Using Module Pattern</h2>
+<input type="text" id="city" placeholder="Enter city name">
+<button id="btn">Get Weather</button>
+
+<div id="result"></div>
+
+<script type="module">
+    // Importing functions from the weather module
+import { fetchWeatherData, displayWeather, showError } from "./weather_module.js";
+
+// Event listener for button click
+document.getElementById("btn").addEventListener("click", async () => {
+        const city = document.getElementById("city").value;
+        const resultDiv = document.getElementById("result");
+        resultDiv.className = ''; // Reset classes
+
+        if (!city.trim()) {
+            showError("Please enter a city name");
+            resultDiv.classList.add('has-content');
+            return;
+        }
+
+        try {
+            const data = await fetchWeatherData(city);
+            displayWeather(data);
+            resultDiv.classList.add('has-content');
+        } catch (error) {
+            console.error(error);
+            showError("City not found or API issue");
+            resultDiv.classList.add('has-content');
+        }
+    });
+</script>
+
+</body>
+</html>

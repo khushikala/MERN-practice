@@ -1,0 +1,58 @@
+[
+  {
+    "_id": { "$oid": "6724b012d7e03a01ab98e781" },
+    "userId": { "$oid": "6724ab12d7e03a01ab98e76c" },
+    "orderDate": { "$date": "2025-10-31T10:15:00Z" },
+    "status": "Delivered",
+    "shippingAddress": {
+      "street": "123 Main Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10001",
+      "country": "USA"
+    },
+    "products": [
+      {
+        "productId": { "$oid": "6724ac77d7e03a01ab98e771" },
+        "name": "Apple iPhone 16 Pro",
+        "quantity": 1,
+        "price": 1299.99
+      },
+      {
+        "productId": { "$oid": "6724ac88d7e03a01ab98e772" },
+        "name": "Nike Air Zoom Pegasus 40",
+        "quantity": 2,
+        "price": 120.0
+      }
+    ],
+    "totalAmount": 1539.99,
+    "paymentMethod": "Credit Card",
+    "paymentStatus": "Paid",
+    "createdAt": { "$date": "2025-10-31T10:15:00Z" }
+  },
+  {
+    "_id": { "$oid": "6724b012d7e03a01ab98e782" },
+    "userId": { "$oid": "6724ab12d7e03a01ab98e77a" },
+    "orderDate": { "$date": "2025-10-29T14:30:00Z" },
+    "status": "Shipped",
+    "shippingAddress": {
+      "street": "456 Elm Avenue",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postalCode": "90001",
+      "country": "USA"
+    },
+    "products": [
+      {
+        "productId": { "$oid": "6724ac88d7e03a01ab98e772" },
+        "name": "Nike Air Zoom Pegasus 40",
+        "quantity": 1,
+        "price": 120.0
+      }
+    ],
+    "totalAmount": 120.0,
+    "paymentMethod": "PayPal",
+    "paymentStatus": "Pending",
+    "createdAt": { "$date": "2025-10-29T14:30:00Z" }
+  }
+]
