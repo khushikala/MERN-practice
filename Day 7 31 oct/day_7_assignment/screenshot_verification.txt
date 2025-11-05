@@ -1,0 +1,21 @@
+Screenshot Verification Notes:
+
+Screenshot 2025-11-03 012326.png:
+- Should show: Database and collection creation
+- Should show: BookVerseDB database with Authors, Books, and Users collections
+- Should show: Collection structures/schemas
+
+Screenshot 2025-11-03 012843.png:
+- Should show: CRUD operations execution
+- Should show: Query results for User Story 2 operations
+- Should show: Insert, update, delete operation results
+
+Additional screenshots in crud/ folder:
+- Screenshot 2025-11-03 011537.png: Should show CRUD operations
+- Screenshot 2025-11-03 011550.png: Should show query results
+
+Note: Screenshots cannot be viewed programmatically. Please verify that:
+1. Database creation and collection setup is visible
+2. CRUD operations (Create, Read, Update, Delete) are demonstrated
+3. Query results are shown without syntax errors
+4. All required operations from User Stories 1-3 are captured

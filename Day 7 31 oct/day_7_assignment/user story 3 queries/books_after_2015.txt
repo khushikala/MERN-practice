@@ -1,0 +1,7 @@
+// Query 1: Retrieve all books published after 2015
+db.Books.find({
+  publicationYear: { $gt: 2015 }
+});
+
+// Expected results: Books with publicationYear > 2015
+// Should return: "Project Hail Mary" (2021)

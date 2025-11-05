@@ -1,0 +1,75 @@
+db.Books.insertMany([
+  {
+    "title": "1984",
+    "genre": "Dystopian",
+    "publicationYear": 1949,
+    "authorId": ObjectId("69079b20dda5fb3b80596092"),
+    "ratings": [
+      { "user": "khushi", "score": 5, "comment": "A chilling masterpiece." }
+    ]
+  },
+  {
+    "title": "Animal Farm",
+    "genre": "Political Satire",
+    "publicationYear": 1945,
+    "authorId": ObjectId("69079b20dda5fb3b80596093"),
+    "ratings": [
+      { "user": "yash", "score": 5, "comment": "Brilliant allegory." }
+    ]
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "genre": "Fantasy",
+    "publicationYear": 1997,
+    "authorId": ObjectId("69079b20dda5fb3b80596092"),
+    "ratings": [
+      { "user": "khushi", "score": 5, "comment": "Magical and unforgettable." }
+    ]
+  },
+  {
+    "title": "The Lord of the Rings",
+    "genre": "Fantasy",
+    "publicationYear": 1954,
+    "authorId": ObjectId("69079b20dda5fb3b80596094"),
+    "ratings": [
+      { "user": "harsh", "score": 5, "comment": "Epic fantasy adventure." }
+    ]
+  },
+  {
+    "title": "Dune",
+    "genre": "Science Fiction",
+    "publicationYear": 1965,
+    "authorId": ObjectId("69079b20dda5fb3b80596094"),
+    "ratings": [
+      { "user": "khushi", "score": 4, "comment": "Complex and immersive." }
+    ]
+  },
+  {
+    "title": "Neuromancer",
+    "genre": "Science Fiction",
+    "publicationYear": 1984,
+    "authorId": ObjectId("69079b20dda5fb3b80596093"),
+    "ratings": [
+      { "user": "yash", "score": 4, "comment": "Groundbreaking cyberpunk." }
+    ]
+  },
+  {
+    "title": "The Martian",
+    "genre": "Science Fiction",
+    "publicationYear": 2014,
+    "authorId": ObjectId("69079b20dda5fb3b80596092"),
+    "ratings": [
+      { "user": "harsh", "score": 5, "comment": "Thrilling survival story." }
+    ]
+  },
+  {
+    "title": "Project Hail Mary",
+    "genre": "Science Fiction",
+    "publicationYear": 2021,
+    "authorId": ObjectId("69079b20dda5fb3b80596094"),
+    "ratings": [
+      { "user": "khushi", "score": 5, "comment": "Brilliant hard sci-fi." },
+      { "user": "yash", "score": 5, "comment": "Mind-bending concepts." }
+    ]
+  }
+]);

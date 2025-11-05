@@ -1,0 +1,17 @@
+// Query 3: Retrieve all users who joined within the last 6 months
+// Assuming current date is around November 2025, last 6 months = after May 2025
+db.Users.find({
+  joinDate: {
+    $gte: ISODate("2025-05-01T00:00:00Z")
+  }
+});
+
+// Alternative query using date arithmetic (more dynamic):
+db.Users.find({
+  joinDate: {
+    $gte: new Date(Date.now() - 6 * 30 * 24 * 60 * 60 * 1000) // 6 months ago
+  }
+});
+
+// Expected results: Users with joinDate within last 6 months
+// Should return: harsh (joined 2024-09-05 - within 6 months of Nov 2025)

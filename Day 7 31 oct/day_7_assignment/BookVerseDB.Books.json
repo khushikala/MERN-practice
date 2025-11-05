@@ -1,0 +1,151 @@
+[
+  {
+    "_id": {
+      "$oid": "6907a60a1ee35d232989d5ca"
+    },
+    "title": "1984",
+    "genre": "Dystopian",
+    "publicationYear": 1949,
+    "authorId": {
+      "$oid": "69079b20dda5fb3b80596092"
+    },
+    "ratings": [
+      {
+        "user": "khushi",
+        "score": 5,
+        "comment": "A chilling masterpiece."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6907a60a1ee35d232989d5cb"
+    },
+    "title": "Animal Farm",
+    "genre": "Political Satire",
+    "publicationYear": 1945,
+    "authorId": {
+      "$oid": "69079b20dda5fb3b80596093"
+    },
+    "ratings": [
+      {
+        "user": "yash",
+        "score": 5,
+        "comment": "Brilliant allegory."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6907a60a1ee35d232989d5cc"
+    },
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "genre": "Fantasy",
+    "publicationYear": 1997,
+    "authorId": {
+      "$oid": "69079b20dda5fb3b80596092"
+    },
+    "ratings": [
+      {
+        "user": "khushi",
+        "score": 5,
+        "comment": "Magical and unforgettable."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6907a60a1ee35d232989d5cd"
+    },
+    "title": "The Lord of the Rings",
+    "genre": "Fantasy",
+    "publicationYear": 1954,
+    "authorId": {
+      "$oid": "69079b20dda5fb3b80596094"
+    },
+    "ratings": [
+      {
+        "user": "harsh",
+        "score": 5,
+        "comment": "Epic fantasy adventure."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6907a60a1ee35d232989d5ce"
+    },
+    "title": "Dune",
+    "genre": "Science Fiction",
+    "publicationYear": 1965,
+    "authorId": {
+      "$oid": "69079b20dda5fb3b80596094"
+    },
+    "ratings": [
+      {
+        "user": "khushi",
+        "score": 4,
+        "comment": "Complex and immersive."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6907a60a1ee35d232989d5cf"
+    },
+    "title": "Neuromancer",
+    "genre": "Science Fiction",
+    "publicationYear": 1984,
+    "authorId": {
+      "$oid": "69079b20dda5fb3b80596093"
+    },
+    "ratings": [
+      {
+        "user": "yash",
+        "score": 4,
+        "comment": "Groundbreaking cyberpunk."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6907a60a1ee35d232989d5d0"
+    },
+    "title": "The Martian",
+    "genre": "Science Fiction",
+    "publicationYear": 2014,
+    "authorId": {
+      "$oid": "69079b20dda5fb3b80596092"
+    },
+    "ratings": [
+      {
+        "user": "harsh",
+        "score": 5,
+        "comment": "Thrilling survival story."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6907a60a1ee35d232989d5d1"
+    },
+    "title": "Project Hail Mary",
+    "genre": "Science Fiction",
+    "publicationYear": 2021,
+    "authorId": {
+      "$oid": "69079b20dda5fb3b80596094"
+    },
+    "ratings": [
+      {
+        "user": "khushi",
+        "score": 5,
+        "comment": "Brilliant hard sci-fi."
+      },
+      {
+        "user": "yash",
+        "score": 5,
+        "comment": "Mind-bending concepts."
+      }
+    ]
+  }
+]

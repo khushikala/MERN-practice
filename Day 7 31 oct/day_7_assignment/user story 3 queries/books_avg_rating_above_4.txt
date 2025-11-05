@@ -1,0 +1,50 @@
+// Query 4: Find books with an average rating greater than 4
+db.Books.aggregate([
+  {
+    $addFields: {
+      averageRating: {
+        $avg: "$ratings.score"
+      }
+    }
+  },
+  {
+    $match: {
+      averageRating: { $gt: 4 }
+    }
+  },
+  {
+    $project: {
+      title: 1,
+      genre: 1,
+      publicationYear: 1,
+      authorId: 1,
+      ratings: 1,
+      averageRating: 1
+    }
+  }
+]);
+
+// Alternative simpler query (if you want to see all books with their averages):
+db.Books.aggregate([
+  {
+    $addFields: {
+      averageRating: { $avg: "$ratings.score" }
+    }
+  },
+  {
+    $project: {
+      title: 1,
+      genre: 1,
+      averageRating: 1
+    }
+  },
+  {
+    $match: {
+      averageRating: { $gt: 4 }
+    }
+  }
+]);
+
+// Expected results: Books with average rating > 4
+// Should return: Most books (1984: 5, Animal Farm: 5, Harry Potter: 5,
+// The Lord of the Rings: 5, The Martian: 5, Project Hail Mary: 5)

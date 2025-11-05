@@ -1,0 +1,33 @@
+// Query 2: Find authors who have written books in the "Fantasy" genre
+db.Authors.aggregate([
+  {
+    $lookup: {
+      from: "Books",
+      localField: "_id",
+      foreignField: "authorId",
+      as: "books"
+    }
+  },
+  {
+    $match: {
+      "books.genre": "Fantasy"
+    }
+  },
+  {
+    $project: {
+      name: 1,
+      nationality: 1,
+      birthYear: 1,
+      fantasyBooks: {
+        $filter: {
+          input: "$books",
+          as: "book",
+          cond: { $eq: ["$$book.genre", "Fantasy"] }
+        }
+      }
+    }
+  }
+]);
+
+// Expected results: Authors with Fantasy genre books
+// Should return: khushi (Harry Potter), don (The Lord of the Rings)

@@ -1,0 +1,28 @@
+/* Basic visual styling and hover transitions for product cards */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(18, 38, 63, 0.06);
+}
+
+.product-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 28px rgba(18,38,63,0.12);
+}
+
+.product-card img {
+  object-fit: cover;
+  height: 180px;
+}
+
+.price {
+  color: #0b5ed7;
+  font-weight: 700;
+  margin-bottom: 0;
+}

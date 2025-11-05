@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Showcase - Home</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bg-primary text-white py-3">
+      <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="h3 mb-0">MyStore</h1>
+        <nav aria-label="Primary">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <!-- Category navigation -->
+      <section aria-labelledby="categories" class="mb-4">
+        <h2 id="categories" class="h5 mb-3">Categories</h2>
+        <div class="d-flex flex-wrap gap-2" id="category-bar">
+          <button class="btn btn-outline-primary btn-sm">All</button>
+          <button class="btn btn-outline-primary btn-sm">Electronics</button>
+          <button class="btn btn-outline-primary btn-sm">Clothing</button>
+          <button class="btn btn-outline-primary btn-sm">Home</button>
+          <button class="btn btn-outline-primary btn-sm">Accessories</button>
+        </div>
+      </section>
+
+      <!-- Featured products -->
+      <section aria-labelledby="featured-products" class="mb-5">
+        <h2 id="featured-products" class="h5 mb-3">Featured Products</h2>
+
+        <!-- Responsive grid using Bootstrap -->
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4"
+          id="product-grid"
+        >
+          <!-- Product Card 1 -->
+          <article class="col">
+            <div class="card h-100 product-card">
+              <!-- <img src="https://via.placeholder.com/400x250?text=Headphones" class="card-img-top" alt="Headphones"> -->
+              <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&h=250&q=80"
+                class="card-img-top"
+                alt="Wireless Headphones"
+              />
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6 mb-2">Wireless Headphones</h3>
+                <p class="mb-3 price">₹2,499</p>
+                <p class="card-text mt-auto">
+                  Comfortable, long-battery life and noise reduction.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 2 -->
+          <article class="col">
+            <div class="card h-100 product-card">
+              <!-- <img src="https://via.placeholder.com/400x250?text=T-Shirt" class="card-img-top" alt="T-Shirt"> -->
+              <img
+                src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=400&h=250&q=80"
+                class="card-img-top"
+                alt="Classic T-Shirt"
+              />
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6 mb-2">Classic T-Shirt</h3>
+                <p class="mb-3 price">₹799</p>
+                <p class="card-text mt-auto">
+                  Breathable cotton, multiple sizes available.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 3 -->
+          <article class="col">
+            <div class="card h-100 product-card">
+              <!-- <img src="https://via.placeholder.com/400x250?text=Mug" class="card-img-top" alt="Mug"> -->
+             <img src="https://plus.unsplash.com/premium_photo-1668046490161-f08d1280f10c?auto=format&fit=crop&w=400&h=250&q=80" 
+             class="card-img-top"alt="Ceramic Mug"/>
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h6 mb-2">Ceramic Mug</h3>
+                <p class="mb-3 price">₹399</p>
+                <p class="card-text mt-auto">
+                  Microwave-safe, dishwasher friendly.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Newsletter subscription -->
+      <section aria-labelledby="newsletter" class="mb-5">
+        <h2 id="newsletter" class="h5 mb-3">Subscribe to our Newsletter</h2>
+        <form id="newsletter-form" class="row g-2 align-items-center">
+          <div class="col-auto flex-grow-1">
+            <label for="email" class="form-label visually-hidden">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-success">Subscribe</button>
+          </div>
+        </form>
+
+        <div id="newsletter-msg" class="mt-3" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="bg-light py-3">
+      <div class="container d-flex justify-content-between small">
+        <span>© <span id="year"></span> MyStore</span>
+        <span>Made with ❤️ using HTML, CSS, Bootstrap</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Minimal page script for validation & small interactions -->
+    <script>
+      // Year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Newsletter form validation & success message
+      const form = document.getElementById("newsletter-form");
+      const email = document.getElementById("email");
+      const msg = document.getElementById("newsletter-msg");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        // simple HTML5 validation check
+        if (!email.checkValidity()) {
+          email.classList.add("is-invalid");
+          msg.textContent = "";
+          return;
+        }
+        email.classList.remove("is-invalid");
+
+        // simulate subscription success
+        msg.innerHTML =
+          '<div class="alert alert-success p-2 mb-0">Thanks! You have subscribed with <strong>' +
+          email.value +
+          "</strong>.</div>";
+        form.reset();
+      });
+    </script>
+  </body>
+</html>

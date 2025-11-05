@@ -1,0 +1,8 @@
+[
+  {"id":1,"title":"Wireless Headphones","category":"Electronics","price":2499,"image":"https://via.placeholder.com/400x250?text=Headphones"},
+  {"id":2,"title":"Classic T-Shirt","category":"Clothing","price":799,"image":"https://via.placeholder.com/400x250?text=T-Shirt"},
+  {"id":3,"title":"Ceramic Mug","category":"Home","price":399,"image":"https://via.placeholder.com/400x250?text=Mug"},
+  {"id":4,"title":"Smart Watch","category":"Electronics","price":4999,"image":"https://via.placeholder.com/400x250?text=Smart+Watch"},
+  {"id":5,"title":"Running Shoes","category":"Clothing","price":3499,"image":"https://via.placeholder.com/400x250?text=Shoes"},
+  {"id":6,"title":"Desk Lamp","category":"Home","price":1299,"image":"https://via.placeholder.com/400x250?text=Lamp"}
+]
