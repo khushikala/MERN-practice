@@ -1,0 +1,22 @@
+{
+  "packages": [
+    {
+      "id": 1,
+      "name": "Paris Getaway",
+      "description": "5 days in Paris with Eiffel Tower visit",
+      "price": 1000
+    },
+    {
+      "id": 2,
+      "name": "Tokyo Adventure",
+      "description": "7 days exploring Tokyo's culture",
+      "price": 1500
+    },
+    {
+      "id": 3,
+      "name": "New York Trip",
+      "description": "4 days in the Big Apple",
+      "price": 800
+    }
+  ]
+}
