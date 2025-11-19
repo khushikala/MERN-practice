@@ -1,0 +1,13 @@
+{
+  "name": "challenge6",
+  "version": "1.0.0",
+  "description": "event",
+  "license": "ISC",
+  "author": "khushi",
+  "type": "module",
+
+  "main": "events.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "challenges",
+  "version": "1.0.0",
+  "description": "day16assignment",
+  "license": "ISC",
+  "author": "khushi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "day_17_node_prototype",
+  "version": "1.0.0",
+  "description": "companyPrototype",
+  "license": "ISC",
+  "author": "khushi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,2 @@
+This is the content to be copied using async/await.
+Demonstrating clean syntax for asynchronous operations in Node.js.

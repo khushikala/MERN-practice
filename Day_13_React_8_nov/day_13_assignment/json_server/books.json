@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "JAVA",
+      "author": "Author J",
+      "price": 1000,
+      "bio": "Author J is a renowned software engineer with over 20 years of experience in Java development.",
+      "topBooks": [
+        "Java Fundamentals",
+        "Advanced Java",
+        "Java Design Patterns"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "REACT",
+      "author": "Author R",
+      "price": 500,
+      "bio": "Author R is a frontend expert specializing in React and modern web technologies.",
+      "topBooks": [
+        "React Basics",
+        "Advanced React",
+        "React Hooks Guide"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "MySQL",
+      "author": "Author S",
+      "price": 200,
+      "bio": "Author S is a database administrator and SQL expert with extensive experience in MySQL.",
+      "topBooks": [
+        "MySQL Essentials",
+        "Database Design",
+        "SQL Optimization"
+      ]
+    },
+    {
+      "id": "13f7",
+      "title": "Node js",
+      "author": "Author N",
+      "price": 30,
+      "bio": "Author N bio",
+      "topBooks": [
+        "nodejs1",
+        "node js2",
+        "nodejs3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+This is sample data for the file reading challenge using callbacks.
+Asynchronous programming in Node.js demonstrated here.

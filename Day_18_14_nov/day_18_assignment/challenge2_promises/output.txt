@@ -1,0 +1,2 @@
+This is the content to be copied using promises.
+Chaining multiple async operations in Node.js.
