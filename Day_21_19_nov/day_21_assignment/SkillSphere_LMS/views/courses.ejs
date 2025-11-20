@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Courses</title>
+</head>
+<body>
+    <h1>SkillSphere LMS – Courses</h1>
+
+    <ul>
+        <% courses.forEach(course => { %>
+            <li><%= course.name %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
