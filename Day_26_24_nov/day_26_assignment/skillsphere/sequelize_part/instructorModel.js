@@ -1,0 +1,8 @@
+const { DataTypes } = require("sequelize");
+const sequelize = require("../config/sequelize");
+
+const Instructor = sequelize.define("Instructor", {
+    name: DataTypes.STRING
+});
+
+module.exports = Instructor;

@@ -1,0 +1,28 @@
+- backend
+  - server.js
+- package-lock.json
+- package.json
+- public
+  - index.html
+- screenshots
+  - Screenshot_10_Product_Dashboard_after_adding_new_product2.png
+  - Screenshot_1_Product_Dashboard.png
+  - Screenshot_2_Product_Details.png
+  - Screenshot_3_Add_New_Product_Form_Validation.png
+  - Screenshot_4_Add_New_Product_Form_Validation_Success.png
+  - Screenshot_5_Product_List_after_adding_new_product.png
+  - Screenshot_6_Postman_test1.png
+  - Screenshot_7_Postman_test2.png
+  - Screenshot_8_Postman_test3.png
+  - Screenshot_9_Postman_test4.png
+- src
+  - App.js
+  - components
+    - AddProduct.js
+    - ProductCard.js
+    - ProductDetail.js
+    - ProductList.js
+  - context
+    - ProductContext.js
+  - index.css
+  - index.js
